@@ -122,7 +122,8 @@ export default async function handler(req, res) {
             expiry_date: user.expiry_date || '',
             created_at: user.created_at || '',
             is_expired: isExpired,
-            system_settings: systemSettings
+            system_settings: systemSettings,
+            api_keys: user.api_keys || null
         });
 
     } catch (error) {
